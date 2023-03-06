@@ -1,0 +1,112 @@
+/* Set text to uppercase for header and footer */
+header, footer {
+  text-transform: uppercase;
+}
+
+/* Set body to minimum height of viewport height */
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
+/* Style for the header */
+header {
+  height: 150px;
+  background-color: rgba(203, 193, 177, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for header wrapper */
+.header-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for navigation links */
+.nav_links li {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* Style for navigation link text */
+.nav_links li a {
+  display: inline-block;
+  padding: 18.5px 18px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  font-size: 1.125em;
+}
+
+/* Style for burger menu */
+.burger-menu {
+  display: none;
+}
+
+/* Style for footer */
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(203, 193, 177, 1);
+}
+
+/* Style for footer content */
+.footer-content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 970px) {
+  /* Hide navigation links */
+  .nav_links li {
+    display: none;
+  }
+
+  /* Display burger menu */
+  .burger-menu {
+    display: flex;
+    background-image: url(pictures/menu.png);
+    background-color: rgba(203, 193, 177, 1);
+    border: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 500px) {
+  /* Decrease height of header and footer */
+  header {
+    height: 100px;
+  }
+  footer {
+    height: 100px;
+  }
+
+  /* Decrease width of logo and burger menu */
+  .logo {
+    width: 80px;
+  }
+  .burger-menu {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Hide navigation links */
+  .nav_links li {
+    display: none;
+  }
+}

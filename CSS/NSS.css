@@ -1,0 +1,208 @@
+/*/ Uppercase transform /*/
+h1, .vacation-button, h2, .islands-button, h3 {
+    text-transform: uppercase;
+}
+
+.header-vacation {
+    background-color: rgba(124, 116, 116, 0.3);
+}
+
+.vacation-section {
+    height: 90vh;
+    position: relative;
+    background-image: url(./pictures/main-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.vacation-section img {
+    width: 100%;
+    height: auto;
+}
+
+.vacation {
+    height: 350px;
+    width: 650px;
+    background-color: rgba(124, 116, 116, 0.3);
+    color: #F8F7EC;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1rem;
+}
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3%;
+}
+.vacation-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.vacation-button, .islands-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 55px;
+    width: 172px;
+
+    font-size: 1.125em;
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #7C7474;
+    color: #F8F7EC;
+    border: none;
+    cursor: pointer;
+}
+.vacation-button {
+    margin-top: 4%;
+    margin-bottom: 5.5%;
+}
+.islands-button {
+    margin-top: 6%;
+    margin-bottom: 6.1%;
+}
+.islands-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    margin-top: 92px;
+    margin-bottom: 104px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+.islands-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5%;
+    width: 100%;
+}
+.madeira-img, .sardinie-img, .kypr-img {
+    width: 350px;
+}
+.madeira, .sardinie, .kypr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.madeira-txt, .sardinie-txt, .kypr-txt {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 2.7%;
+    padding-right: 2.7%;
+    margin-bottom: 6%;
+}
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+@media (max-width: 740px) {
+    .vacation-section {
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
+    .vacation {
+        width: 60%;
+        height: 80%;
+        position: static;
+        background-color: #7C7474;
+    }  
+    h1 {
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 3.2vh;
+    }
+    .vacation-text {
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .vacation-button, .islands-button {
+        width: 160px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 13px;
+        margin-top: 3vh;
+        margin-bottom: 2.3vh;
+    }
+    .vacation-button {
+        color: #000000;
+        background-color: rgba(248, 247, 236, 0.3);
+    }
+    .islands-button {
+        color: #F8F7EC;
+        margin-bottom: 6vh;
+    }
+    h2 {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 13px; 
+    }
+    .islands-wrapper {
+        margin-top: 4vh;
+    }
+}
+@media (max-width: 500px) {
+    .vacation-section {
+        height: 35vh;
+    }
+    .vacation {
+        width: 310px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .vacation-text {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .vacation-button, .islands-button {
+        width: 120px;
+        height: 25px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 3.5vh;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px; 
+    }
+}
